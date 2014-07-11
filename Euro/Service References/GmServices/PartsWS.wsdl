@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:intf="http://devtest.bmk.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://devtest.bmk.com" targetNamespace="http://devtest.bmk.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://devtest.bmk.com">
+      <xsd:element name="getPartPricing">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="getPartPricingResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" name="getPartPricingReturn" type="impl:PartDetail" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="PartDetail">
+        <xsd:sequence>
+          <xsd:element name="part_number" nillable="true" type="xsd:string" />
+          <xsd:element name="msrp" type="xsd:double" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getPartPricingRequest">
+    <wsdl:part name="parameters" element="impl:getPartPricing" />
+  </wsdl:message>
+  <wsdl:message name="getPartPricingResponse">
+    <wsdl:part name="parameters" element="impl:getPartPricingResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PartsWS">
+    <wsdl:operation name="getPartPricing">
+      <wsdl:input name="getPartPricingRequest" message="impl:getPartPricingRequest" />
+      <wsdl:output name="getPartPricingResponse" message="impl:getPartPricingResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PartsWSSoapBinding" type="impl:PartsWS">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getPartPricing">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getPartPricingRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getPartPricingResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PartsWSService">
+    <wsdl:port name="PartsWS" binding="impl:PartsWSSoapBinding">
+      <wsdlsoap:address location="http://preprod.gm-apps.com/devTest/services/PartsWS" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,15 @@
+
+1)Too many accesories increase the weight of a vehicle and that may hamper performance. In order to maintain an optimum weight we'll have to maximise accessory usage and keep weight under limit. Write a java program to take an multiline(atleast 10) input file that has a list of 8 digit part numbers and their decimal weight. Your program will also take total weight to be reduced as an input and then identify the accessories that will have to be dropped to fit the given weight. Example input file:
+34512378 45.34
+11569826 28.65
+13138956 36.43
+Example output: Accessories to be dropped, 11569826, 13138956
+
+2) There are many dealers for GM in the state of Michigan, we want them to be able to see their closest competitors. Write a java program to take a multiline(atleast 9) input file where each line has three values separated by a space. The first is a two-digit dealer ID followed by latitude and logitude where no two dealers share the same location. To make this easy let us just assume the world is flat and these are like x,y co-ordinates. The program must output the three closest dealers to every dealer in ascending order. Example input file:
+23 12.3 -12.3
+37 78.92 160.3
+41 -121.4 12.2
+67 78.34 2.45
+Example Output: 23 67,41,37
+
+3) We make websites that get displayed in multiple languages across countries. Prices and currencies make a very crucial part and with that comes conversion. Write a java program that interacts with two webservices, the first to get a list of parts and their respective dollar prices. The second webservice will provide conversion rates from USD to other currencies, for now let us take EUR as teh target. The final output must display the list of parts with their EUR prices. Below are both webservices

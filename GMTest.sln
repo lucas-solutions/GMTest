@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Euro", "Euro\Euro.csproj", "{8DA60713-A821-4E76-ADF5-8567435A56E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Closest", "Closest\Closest.csproj", "{5EB96EC8-3789-4FC5-8131-72F4400E0FF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KDTreeDLL", "KDTreeDLL\KDTreeDLL\KDTreeDLL.csproj", "{0B9DF5C1-9B8A-42C4-BF66-9DDCBA055F03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constraint", "Constraint\Constraint.csproj", "{FC84E910-6B76-4A0F-AB1E-C05358D77088}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DA60713-A821-4E76-ADF5-8567435A56E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA60713-A821-4E76-ADF5-8567435A56E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA60713-A821-4E76-ADF5-8567435A56E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA60713-A821-4E76-ADF5-8567435A56E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EB96EC8-3789-4FC5-8131-72F4400E0FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB96EC8-3789-4FC5-8131-72F4400E0FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB96EC8-3789-4FC5-8131-72F4400E0FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB96EC8-3789-4FC5-8131-72F4400E0FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B9DF5C1-9B8A-42C4-BF66-9DDCBA055F03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B9DF5C1-9B8A-42C4-BF66-9DDCBA055F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B9DF5C1-9B8A-42C4-BF66-9DDCBA055F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B9DF5C1-9B8A-42C4-BF66-9DDCBA055F03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC84E910-6B76-4A0F-AB1E-C05358D77088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC84E910-6B76-4A0F-AB1E-C05358D77088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC84E910-6B76-4A0F-AB1E-C05358D77088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC84E910-6B76-4A0F-AB1E-C05358D77088}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
